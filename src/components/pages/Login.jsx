@@ -1,7 +1,16 @@
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
 
+import { useContext } from 'react';
+import UserContext from '../../contexts/UserContext';
+
+import { useNavigate } from 'react-router-dom';
+
 const Login = () => {
+
+    const { users, setLoggedInUser } = useContext(UserContext);
+
+    const navigateTo = useNavigate();
 
     const validationSchema = Yup.object({
         username: Yup
@@ -19,15 +28,15 @@ const Login = () => {
         },
         validationSchema,
         onSubmit: (values,actions) => {
-            // const logged = users.find(user => (user.username === values.username) && (user.password === values.password));
-            // if (logged) {   
-            //     setLoggedInUser(logged);
-            //     sessionStorage.setItem('loggedInUser', JSON.stringify(logged)); 
-            //     navigateTo('/questions');
-            // } else {
-            //     alert('Wrong username or password')
-            //     actions.resetForm();
-            // }
+            const logged = users.find(user => (user.username === values.username) && (user.password === values.password));
+            if (logged) {   
+                setLoggedInUser(logged);
+                sessionStorage.setItem('loggedInUser', JSON.stringify(logged)); 
+                navigateTo('/');
+            } else {
+                alert('Wrong username or password')
+                actions.resetForm();
+            }
           },
     });
 

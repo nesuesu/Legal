@@ -1,0 +1,11 @@
+{
+    "users":[
+        {
+            "id":1,
+            "username":"admin",
+            "password":"admin",
+            "email":"v@v.v",
+            "avatar":"https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png"
+        }
+    ]
+}
