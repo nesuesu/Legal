@@ -1,4 +1,15 @@
 
+
+/* MAIN COLORS  */
+
+:root { /* The :root pseudo-class selector matches the document's root element which is always the html element but its specificity is higher. :root can be useful for declaring global CSS variables: */
+    --color-main: beige; /* main viewport */
+    --color-header: rgb(212, 212, 16); /* header and footer */
+    --color-form: rgb(209, 243, 243); /* forms */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
 /* ---------COMMON STYLES--------------- */
 
 * {
@@ -20,7 +31,7 @@ body {
 header {
     position: sticky;
     top: 0px;
-    background-color: rgb(212, 212, 16);
+    background-color: var(--color-header);
   }
   
   .flex {
@@ -32,8 +43,8 @@ header {
   .logo {
     width: 200px;
     display: flex;
-    align-items: center ;
-    margin: 15px;
+    align-items: center;
+    margin: 15px 0px;
   }
 
   .logo img {
@@ -50,8 +61,9 @@ header {
   .menuitem {
     text-decoration: none; 
     border: 1px solid black;
+    border-radius: 5px;
     padding: 5px;
-    background-color: azure;
+    background-color: var(--color-form);
   }
   
   .login {
@@ -61,24 +73,26 @@ header {
     gap: 15px;
     width: 200px;
     text-align: right;
+    padding-right: 25px;
   }
   
   .userinfo {
+    padding: 10px 0px 10px 100px;
+    width: 200px;
     text-align: center;
-    padding: 10px 0px;
   }
 
 
 /* ----LOGIN / REGISTER / ADDQUESTION / ADDANSWER --------- */
 
 .forma {
-    background-color: rgb(209, 243, 243);
+    background-color: var(--color-form);
     color: blue;
     width: 300px;
     border: 1px solid black;
     border-radius: 20px;
     padding: 0px 20px;
-    margin: 100px auto 0px;
+    margin: 100px auto 15px;
   }
   
   .forma h1 {
@@ -118,7 +132,7 @@ header {
 #page-container {
     position: relative;
     min-height: 100vh;
-    background-color: beige;
+    background-color: var(--color-main);
 }
   
 #content-wrap {
@@ -131,24 +145,39 @@ header {
     width: 100%;
     height: 3.5rem;            /* Footer height */
     text-align: center;
-    background-color: rgb(212, 212, 16);
+    background-color: var(--color-header);
 }
 
 /* -------------RESPONSIVENESS------------- */
 
-    /* @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
       .flex {
         flex-direction: column;
         gap: 20px;
+        min-width: 200px;
       }
       .menu {
-        justify-content: space-around;
+        /* text-align: center; */
+        margin: auto;
       }
       .logo {
         text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 15px;
       }
       .login {
+        width: 100%;
         text-align: center;
+        padding-right: 0px;
+        margin-bottom: 15px;
       }
-    } */
+      .userinfo {
+        padding: 10px 0px;
+        width: 200px;
+        /* text-align: center; */
+        display: block;
+        margin: auto;
+      }
+    }
   
