@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/legal/static/css/main.29b802f4.css",
+    "main.js": "/legal/static/js/main.36480972.js",
+    "static/media/scitus logo.png": "/legal/static/media/scitus logo.ec3ea087cbdb1809bbf5.png",
+    "index.html": "/legal/index.html",
+    "main.29b802f4.css.map": "/legal/static/css/main.29b802f4.css.map",
+    "main.36480972.js.map": "/legal/static/js/main.36480972.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29b802f4.css",
+    "static/js/main.36480972.js"
+  ]
+}
