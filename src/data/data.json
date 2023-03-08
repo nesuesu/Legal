@@ -1,11 +1,25 @@
 {
-    "users":[
-        {
-            "id":1,
-            "username":"admin",
-            "password":"admin",
-            "email":"v@v.v",
-            "avatar":"https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "v@v.v",
+      "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png"
+    },
+    {
+      "username": "viktor",
+      "password": "vik123",
+      "email": "v@v.v",
+      "avatar": "https://img.icons8.com/office/200w/administrator-male.png",
+      "id": 1678288730143
+    },
+    {
+      "username": "elena",
+      "password": "elena",
+      "email": "e@e.e",
+      "avatar": "https://cdn-icons-png.flaticon.com/512/53/53129.png",
+      "id": 1678289083701
+    }
+  ]
 }

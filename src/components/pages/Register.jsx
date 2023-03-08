@@ -2,7 +2,15 @@
 import * as Yup from 'yup';
 import {useFormik} from 'formik';
 
+import { useContext } from 'react';
+import UserContext from '../../contexts/UserContext';
+import { useNavigate } from 'react-router-dom';
+
 const Register = () => {
+
+    const {users, setUsers, postUser, setLoggedInUser} = useContext(UserContext);
+
+    const navigateTo = useNavigate();
 
     const validationSchema = Yup.object({
         username: Yup
@@ -39,17 +47,16 @@ const Register = () => {
         validateOnChange:true,
         validateOnBlur:true,
         onSubmit: (values,actions) => {
-            // const {passwordRepeat, ...rest} = values;
-            // const data = rest;
-            // if (users.findIndex(user => user.username === values.username) === -1) {
-            //     setUsers([...users, data]);
-            //     postUser(data); // !!!!!!!!!!!!!!!!!!!!
-            //     setLoggedInUser(data);
-            //     sessionStorage.setItem('loggedInUser', JSON.stringify(data)); 
-            //     navigateTo('/questions');
-            // } else {
-            //     alert('The username you have entered exists');
-            // }
+            const {passwordRepeat, ...rest} = values;
+            if (users.findIndex(user => user.username === values.username) === -1) {
+                setUsers([...users, rest]);
+                postUser(rest); // !!!!!!!!!!!!!!!!!!!!
+                setLoggedInUser(rest);
+                sessionStorage.setItem('loggedInUser', JSON.stringify(rest)); 
+                navigateTo('/');
+            } else {
+                alert('The username you have entered exists');
+            }
 
           },
     });
