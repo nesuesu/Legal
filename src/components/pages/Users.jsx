@@ -9,12 +9,12 @@ const Users = () => {
         <>
         <h1>Users</h1>
         {users &&
-            users.map( (user) => (
-                <>
-                <img style={{height:'30px'}} src={user.avatar} alt="avatar" />
-                <span> username: {user.username} - password: {user.password} - id: {user.id}</span>
-                <hr />
-                </>
+            users.map( (user,index) => (
+                <div key={index}>
+                    <img style={{height:'30px'}} src={user.avatar} alt="avatar" />
+                    <span> username: {user.username} - password: {user.password} - id: {user.id}</span>
+                    <hr />
+                </div>
         ))
         }
         </>
