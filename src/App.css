@@ -127,6 +127,21 @@ header {
     color: red;
   }
 
+/* -----------FLOWERS--------------- */
+
+.flowers {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: rgb(54, 54, 9); */
+}
+
+.flowers img {
+  width: 300px;
+  object-fit: contain;
+  margin-left: 15px;
+}
+
 /* -----------FOOTER--------------- */
 
 #page-container {

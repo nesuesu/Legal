@@ -1,0 +1,53 @@
+{
+    "flowers":[
+        {
+          "name": "rose",
+          "image": "https://thumbs.dreamstime.com/b/red-rose-4590099.jpg",
+          "color": "red",
+          "likeit": true,
+          "id": 1
+        },
+        {
+          "name": "sunflower",
+          "image": "https://media.istockphoto.com/id/174648035/photo/sunflower-isolated.jpg?s=612x612&w=0&k=20&c=wMNfxWPw4Zwphpazd6vH_YtJVZnSyep_uPRU9l5kRJI=",
+          "color": "yellow",
+          "likeit": true,
+          "id": 2
+        },
+        {
+          "name": "iris",
+          "image": "https://img.freepik.com/free-photo/side-view-dark-purple-color-iris-flower-isolated-white-background_141793-8059.jpg?w=2000",
+          "color": "blue",
+          "likeit": true,
+          "id": 3
+        },
+        {
+          "name": "lotus",
+          "image": "https://img.freepik.com/premium-photo/lotus-flower-white-background_62678-128.jpg?w=2000",
+          "color": "pink",
+          "likeit": true,
+          "id": 4
+        },
+        {
+          "name": "periwinkle",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtSHy_dEz3128thDa0Lc5O0cwXc3V_GrVMgw&usqp=CAU",
+          "color": "white",
+          "likeit": true,
+          "id": 5
+        },
+        {
+          "name": "jasmine",
+          "image": "https://media.istockphoto.com/id/1134069126/photo/branch-of-jasmines-flowers-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=rndtTqNVRKKjJkgIBdgvQ2pRwIsn2awjCcNwFYdnSG4=",
+          "color": "white",
+          "likeit": true,
+          "id": 6
+        },
+        {
+          "name": "tulip",
+          "image": "https://www.shutterstock.com/image-illustration/beautiful-tulip-flower-illustration-graphic-260nw-1122454784.jpg",
+          "color": "red",
+          "likeit": true,
+          "id": 7
+        }
+      ]
+}

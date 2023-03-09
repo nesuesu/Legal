@@ -21,6 +21,7 @@ const Header = () => {
 
             <div className='menu'>
                 <Link to={'/'} className='menuitem'>Home</Link>
+                <Link to={'/flowers'} className='menuitem'>Flowers</Link>
                 { loggedInUser && 
                 <Link to={'/users'} className='menuitem'>Users</Link>
                 }
