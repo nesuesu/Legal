@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Legal/static/css/main.29b802f4.css",
-    "main.js": "/Legal/static/js/main.fc9ba128.js",
+    "main.js": "/Legal/static/js/main.bb7741b3.js",
     "static/media/scitus logo.png": "/Legal/static/media/scitus logo.ec3ea087cbdb1809bbf5.png",
     "index.html": "/Legal/index.html",
     "main.29b802f4.css.map": "/Legal/static/css/main.29b802f4.css.map",
-    "main.fc9ba128.js.map": "/Legal/static/js/main.fc9ba128.js.map"
+    "main.bb7741b3.js.map": "/Legal/static/js/main.bb7741b3.js.map"
   },
   "entrypoints": [
     "static/css/main.29b802f4.css",
-    "static/js/main.fc9ba128.js"
+    "static/js/main.bb7741b3.js"
   ]
 }
