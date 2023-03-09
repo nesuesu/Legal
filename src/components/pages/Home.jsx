@@ -16,8 +16,8 @@ const Home = () => {
             </>
         :
         <div className="flowers">
-            {data.flowers.map(flower =>
-                <div>
+            {data.flowers.map((flower,index) =>
+                <div key={index}>
                     <h3 style={{textAlign:'center', color:'black'}}>{flower.name}</h3>
                     <img src={flower.image} alt="flower" />
                     <p style={{textAlign:'center'}}>color: {flower.color}</p>

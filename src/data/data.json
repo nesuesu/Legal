@@ -41,6 +41,20 @@
       "email": "x@x.x",
       "avatar": "https://img.icons8.com/color/100/name.png",
       "id": 1678349323089
+    },
+    {
+      "username": "edvard",
+      "password": "www",
+      "email": "x@x.x",
+      "avatar": "https://images.gamebanana.com/img/ss/mods/614e6b52ac66e.jpg",
+      "id": 1678389148815
+    },
+    {
+      "username": "ed",
+      "password": "112",
+      "email": "a@a.a",
+      "avatar": "https://static.independent.co.uk/2022/05/05/13/newFile-2.jpg?width=1200",
+      "id": 1678390676582
     }
   ]
 }
