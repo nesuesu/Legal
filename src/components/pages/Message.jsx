@@ -3,7 +3,7 @@ const Message = () => {
         <>
         <h1>Message</h1>
         <div className="message">
-            <p>Добрый день!</p>
+            <p>Уваж. Идрак, добрый день!</p>
         </div>
         </>
     )
