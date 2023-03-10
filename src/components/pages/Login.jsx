@@ -6,6 +6,8 @@ import UserContext from '../../contexts/UserContext';
 
 import { useNavigate } from 'react-router-dom';
 
+import users1 from '../../data/users.json'
+
 const Login = () => {
 
     const { users, setLoggedInUser } = useContext(UserContext);
@@ -28,7 +30,7 @@ const Login = () => {
         },
         validationSchema,
         onSubmit: (values,actions) => {
-            const logged = users.find(user => (user.username === values.username) && (user.password === values.password));
+            const logged = users1.find(user => (user.username === values.username) && (user.password === values.password));
             if (logged) {   
                 setLoggedInUser(logged);
                 sessionStorage.setItem('loggedInUser', JSON.stringify(logged)); 

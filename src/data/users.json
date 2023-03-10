@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "email": "v@v.v",
+      "avatar": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Image-File.png"
+    },
+    {
+      "username": "user",
+      "password": "user",
+      "email": "x@x.x",
+      "avatar": "https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg",
+      "id": 1678291134338
+    }
+]
