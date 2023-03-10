@@ -17,7 +17,7 @@ const UserInfo = () => {
 
     return (
         <div className="userinfo">
-            <img style={{height:'50px'}} src={loggedInUser.avatar} alt="avatar" />
+            <img style={{height:'50px', width:'50px', objectFit:'cover'}} src={loggedInUser.avatar} alt="avatar" />
             <p>{loggedInUser.username}</p>
             <button onClick={logOut}>Log Out</button>
         </div>

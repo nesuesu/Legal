@@ -12,7 +12,7 @@ const Home = () => {
         <>
         { loggedInUser ?
             <>
-            <div style={{overflow:'hidden'}}>
+            <div style={{width:'100%', overflow:'hidden'}}>
                 <img style={{opacity:'0.25'}} src="https://www.deardrmooney.com/wp-content/uploads/2019/05/Depositphotos_15193351_l-2015-1038x564.jpg" alt="welcome" />
             </div>
             
